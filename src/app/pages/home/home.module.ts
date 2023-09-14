@@ -9,13 +9,15 @@ import { HomePageRoutingModule } from './home-routing.module';
 import { HomePage } from './home.page';
 import { RickAndMortyService } from 'src/app/services/rick-and-morty.service';
 import { HttpClientModule } from '@angular/common/http'
+import { RouterModule } from '@angular/router';
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
     HomePageRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule
   ],
   declarations: [HomePage],
   providers: [RickAndMortyService]
